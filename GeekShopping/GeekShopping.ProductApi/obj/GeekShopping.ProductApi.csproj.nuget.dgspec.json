@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lulis\\Documents\\Cursos\\Core\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj": {}
+    "D:\\www\\LABS\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lulis\\Documents\\Cursos\\Core\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj": {
+    "D:\\www\\LABS\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lulis\\Documents\\Cursos\\Core\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj",
+        "projectUniqueName": "D:\\www\\LABS\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj",
         "projectName": "GeekShopping.ProductApi",
-        "projectPath": "C:\\Users\\Lulis\\Documents\\Cursos\\Core\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj",
-        "packagesPath": "C:\\Users\\Lulis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lulis\\Documents\\Cursos\\Core\\Geek\\GeekShopping\\GeekShopping.ProductApi\\obj\\",
+        "projectPath": "D:\\www\\LABS\\Geek\\GeekShopping\\GeekShopping.ProductApi\\GeekShopping.ProductApi.csproj",
+        "packagesPath": "C:\\Users\\soama\\.nuget\\packages\\",
+        "outputPath": "D:\\www\\LABS\\Geek\\GeekShopping\\GeekShopping.ProductApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Lulis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\soama\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

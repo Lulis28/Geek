@@ -2,29 +2,27 @@
 
 namespace GeekShopping.ProductApi.Model.Context
 {
-    public class MySqlContext : DbContext
+  public class MySqlContext : DbContext
+  {
+    public IConfiguration Configuration { get; }
+
+    public DbSet<Product> Products { get; set; }
+
+    public MySqlContext(IConfiguration configuration)
     {
-        protected readonly IConfiguration Configuration;
-        public MySqlContext() { }
-        //public MySqlContext(DbContextOptions<MySqlContext> options) : base(options) { }
-
-
-        public MySqlContext(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            // connect to mysql with connection string from app settings
-            var connectionString = Configuration.GetConnectionString("WebApiDatabase");
-            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
-        }
-
-        public DbSet<Product> Products { get; set; }
-
-
-
-
+      Configuration = configuration;
     }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+    {
+      // var connectionString = Configuration.GetConnectionString("WebApiDatabase");
+      var connectionString = Configuration["ConnectionStrings:WebApiDatabaseJay"];
+      var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
+      options.UseMySql(connectionString, serverVersion)
+          .LogTo(Console.WriteLine, LogLevel.Information)
+          .EnableSensitiveDataLogging()
+          .EnableDetailedErrors();
+    }
+
+  }
 }
